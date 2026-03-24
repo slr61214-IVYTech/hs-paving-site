@@ -17,7 +17,7 @@ export async function onRequestPost(context) {
       },
       body: JSON.stringify({
         from: 'H&S Paving <onboarding@resend.dev>', // Update this after verifying your domain in Resend
-        to: ['Slr6.12.14@gmail.com'], // The email address you want to receive notifications at
+        to: ['slr6.12.14@gmail.com'], // The email address you want to receive notifications at
         subject: `New Quote Request from ${name}`,
         html: `
           <p><strong>Name:</strong> ${name}</p>
