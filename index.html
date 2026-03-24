@@ -1622,9 +1622,11 @@
   if (urlParams.has('success')) {
     alert('Thank you! Your quote request has been sent successfully.');
     // Add this line to clean the URL:
+    <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('success')) {
+    alert('Thank you! Your quote request has been sent successfully.');
     window.history.replaceState({}, document.title, window.location.pathname);
-  }
-</script>
   }
 </script>
 </body>
